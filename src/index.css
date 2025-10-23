@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    --background: 0 0% 0%; /* Black */
+    --foreground: 0 0% 98%; /* White */
+    --card: 0 0% 10%;
+    --border: 0 0% 15%;
+    --primary: 45 100% 51%; /* Gold */
+    --primary-foreground: 45 100% 10%;
+    --secondary: 0 0% 63%;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    @apply font-inter antialiased select-none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: hsl(var(--primary));
+  }
+}
+
+@layer components {
+  .card {
+    background-color: hsl(var(--card));
+    border-color: hsl(var(--border));
+    @apply border rounded-lg transition-all duration-300;
+  }
+  @media (hover: hover) {
+    .card-hover {
+      @apply hover:border-primary;
+    }
+  }
+  .card-hover {
+    @apply active:scale-[0.98] active:border-primary;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg text-sm font-bold uppercase tracking-wider transition-all duration-300;
+  }
+  .btn-primary {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+  @media (hover: hover) {
+    .btn-primary:hover {
+      background-color: hsl(var(--primary) / 0.9);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px hsl(var(--primary) / 0.2);
+    }
+  }
+  .btn:active {
+    transform: scale(0.98);
+  }
+  .btn-secondary {
+    background-color: transparent;
+    border-color: hsl(var(--border));
+    color: hsl(var(--foreground));
+    @apply border-2;
+  }
+  @media (hover: hover) {
+    .btn-secondary:hover {
+      background-color: hsl(var(--primary));
+      border-color: hsl(var(--primary));
+      color: hsl(var(--primary-foreground));
+    }
+  }
+}
