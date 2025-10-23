@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <>
       <header 
-        className="min-h-screen flex items-center justify-center text-center text-white relative"
+        className="min-h-screen flex items-center justify-center text-center text-white relative  no-fixed-bg" 
         style={{
           backgroundImage: 'url(/images/wallpapersden.com_prague-czech-republic-city_3840x2400.jpg)',
           backgroundSize: 'cover',
@@ -51,16 +51,16 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10">
           <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tighter mb-6">
-            Experience new adventures
+            Explore the Heart of Europe
           </h1>
           <p className="text-xl sm:text-2xl text-secondary mb-10">
-            Personalized tour designed just for you.
+            Unforgettable journeys through the historic streets of Prague.
           </p>
           <button 
             onClick={scrollToActivities}
             className="btn btn-primary"
           >
-            Let's go!
+            View All Tours
           </button>
         </div>
       </header>
@@ -94,8 +94,10 @@ export default function Home() {
         </div>
       </main>
       
-      {/* Contact Section */}
-      <ContactSection />
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white">
+        <ContactSection />
+      </footer>
     </>
   )
 }

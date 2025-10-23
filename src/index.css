@@ -73,3 +73,9 @@
     }
   }
 }
+@supports (-webkit-touch-callout: none) {
+  /* Это правило активируется только в Safari на iOS */
+  .no-fixed-bg {
+    background-attachment: scroll !important;
+  }
+}
