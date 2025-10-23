@@ -40,7 +40,7 @@ export default function Home() {
       <header 
         className="min-h-screen flex items-center justify-center text-center text-white relative"
         style={{
-          backgroundImage: 'url(/src/assets/wallpapersden.com_prague-czech-republic-city_3840x2400.jpg)',
+          backgroundImage: 'url(/images/wallpapersden.com_prague-czech-republic-city_3840x2400.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
