@@ -33,6 +33,9 @@ export default function NavBar() {
       <NavLink to="/activities" className={({ isActive }) => `transition-colors ${isActive ? 'text-primary' : 'text-secondary hover:text-primary'}`}>
         Activities
       </NavLink>
+      <NavLink to="/about-us" className={({ isActive }) => `transition-colors ${isActive ? 'text-primary' : 'text-secondary hover:text-primary'}`}>
+        About Us
+      </NavLink>
     </>
   )
 

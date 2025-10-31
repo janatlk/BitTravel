@@ -4,6 +4,7 @@ import NavBar from './components/NavBar.tsx'
 import Footer from './components/Footer.tsx'
 import Home from './pages/Home.tsx'
 import Activities from './pages/Activities.tsx'
+import AboutUs from './pages/AboutUs.tsx'
 
 function App() {
   const location = useLocation()
@@ -16,6 +17,7 @@ function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path="/activities" element={<Activities />} />
+            <Route path="/about-us" element={<AboutUs />} />
           </Routes>
         </AnimatePresence>
       </main>
