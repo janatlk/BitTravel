@@ -5,19 +5,19 @@ import ContactSection from '../components/ContactSection'
 export default function Activities() {
   const activities = [
     {
-      title: "Individual Tours",
-      description: "Private, personalized tours with expert local guides. Explore Prague at your own pace with flexible itineraries tailored to your interests.",
-      imageUrl: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1200&auto=format&fit=crop",
+      title: "Personalized European Journeys",
+      description: "Private tours designed around you. Explore cities like Prague, Vienna, or Dresden at your own pace — with local guides and tailored experiences.",
+      imageUrl: "https://images.unsplash.com/photo-1541849546-216549ae216d?q=80&w=1200&auto=format&fit=crop",
     },
     {
-      title: "Group Tours",
-      description: "Join fellow travelers and discover Prague together. Cost-effective group experiences with professional guides and great atmosphere.",
-      imageUrl: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1200&auto=format&fit=crop",
+      title: "Shared Adventures Across Europe",
+      description: "Join fellow travelers and explore Europe's most fascinating cities together. Experience culture, history, and fun with professional guides and great company.",
+      imageUrl: "/images/Picture10.jpg",
     },
     {
       title: "Boat Trips",
       description: "Relaxing river cruises on the Vltava. Enjoy breathtaking views of Prague's skyline, bridges, and historic architecture from the water.",
-      imageUrl: "https://images.unsplash.com/photo-1541849546-216549ae216d?q=80&w=1200&auto=format&fit=crop",
+      imageUrl: "/images/Picture12.avif",
     },
     {
       title: "Transfer Services",
@@ -36,7 +36,7 @@ export default function Activities() {
             Our Activities
           </h1>
           <p className="text-xl text-secondary">
-            Choose from our curated experiences designed to showcase the best of Prague.
+            Choose from our curated experiences across Europe's most beautiful cities.
           </p>
         </section>
 
